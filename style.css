@@ -3,36 +3,47 @@
   padding:0;
 }
 html {
-  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 a {
   text-decoration: none;
   color: black;
 }
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
 #landing-body h1, h2 {
   letter-spacing: -0.05em;
 }
 #landing-header {
-  padding-left: 92px;
   padding-top: 32px;
   font-family: 'Karla', sans-serif;
 }
 #landing-ul {
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #landing-ul li:nth-child(1) {
   margin-right: auto;
 }
-#landing-ul li:nth-child(n+2) {
+#landing-ul li:last-child {
   margin-right: 92px;
+}
+#landing-ul li:nth-child(2) {
+  margin-right: 56px;
 }
 #landing-header h1 {
   font-weight: 700;
   font-size: 32px;
 }
 #welcome-grid {
+  margin-top: 32px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -93,8 +104,8 @@ a {
   margin-top: 56px;
   display: flex;
   justify-content: center;
-  align-items:center;
-  width: 67%;
+  align-items: flex-start;
+  width: 800px;
   margin-left:auto;
   margin-right: auto;
 }
@@ -104,4 +115,67 @@ a {
 .howto-steps:nth-child(2) {
   margin-left: auto;
   margin-right: auto;
+}
+.howto-steps img {
+  margin-bottom: 24px;
+}
+#trust {
+  text-align: center;
+  margin-top: 192px;
+  margin-bottom: 192px;
+  font-family: 'Karla', sans-serif;
+}
+#trust h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+#trust p {
+  margin-bottom: 56px;
+}
+#sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+}
+#sources img {
+  margin: 24px 32px;
+}
+.footer {
+  background-color: #bdbdbd;
+  color: #747474;
+  font-family: 'Karla',sans-serif;
+  display: block;
+  width: 100%;
+  height: 128px;
+  position: absolute;
+  bottom: 0;
+}
+.footer a {
+  color: #747474;
+}
+.footer-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer-info {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  text-align: center;
+}
+.footer-container ul {
+  list-style: none;
+}
+.footer-container ul li {
+  margin-bottom: 12px;
+}
+.footer-container > li:last-child {
+  font-size: 32px;
+  font-weight: 700;
 }

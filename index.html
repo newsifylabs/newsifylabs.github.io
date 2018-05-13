@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700|PT+Serif" rel="stylesheet">
 </head>
 <body id="landing-body">
+<div class="wrapper">
   <!-- Header layout using flexbox-->
   <header id="landing-header">
     <div class="header-links">
@@ -22,6 +23,7 @@
     </div>
   </header>
   <main id="landing-main">
+
     <!-- Container med text & bild -->
     <div id="welcome-grid">
       <div id="welcome-text">
@@ -35,6 +37,8 @@
         <img src="assets/placeholder-computer.png" alt="Error displaying image">
       </div>
     </div>
+
+    <!-- Sektion som visar hur det går till -->
     <div id="howto">
       <div id="howto-text">
         <h3>How does it work?</h3>
@@ -42,16 +46,51 @@
       <!-- Flexbox container -->
       <div id="howto-media">
         <div class="howto-steps">
+          <img src="assets/text.png" alt="Step 1">
           <p>Choose your preferred news categories.</p>
         </div>
         <div class="howto-steps">
+          <img src="assets/save.png" alt="Step 2">
           <p>Save your preferences for the future.</p>
         </div>
         <div class="howto-steps">
+          <img src="assets/check.png" alt="Step 3">
           <p>You're done! Your news will be ready for you anytime.</p>
         </div>
       </div>
     </div>
-  </main>
-</body>
-</html>
+
+    <div id="trust">
+      <h3>Can I trust the sources?</h3>
+      <p>We provide news from some of the most trusted and unbiased news
+        sources out there, and here are some examples:</p>
+
+        <!-- Container med exempel på källor -->
+        <div id="sources">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+          <img src="assets/source.png" alt="Source text">
+        </div>
+      </div>
+    </main>
+</div>
+    <!-- Footer -->
+      <div class="footer">
+        <ul class="footer-container">
+          <li>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+          <li id="footer-info">POWERED BY NEWSAPI.ORG - THIS IS A NON-COMMERCIAL PROJECT</li>
+          <li>Newsify</li>
+        </ul>
+      </div>
+
+  </body>
+  </html>
