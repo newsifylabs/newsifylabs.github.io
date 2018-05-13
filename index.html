@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Newsify</title>
-    <script type="text/javascript" src="config.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Newsify</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- JS & CSS Filer -->
+  <script type="text/javascript" src="config.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <!-- Google fonts link -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|PT+Serif" rel="stylesheet">
+</head>
+<body id="landing-body">
+  <!-- Header layout using flexbox-->
+  <header id="landing-header">
+    <div class="header-links">
+      <ul id="landing-ul">
+        <li><h1><a href="#">newsify</a></h1></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="landing-main">
+    <div id="welcome-grid">
+      <div id="welcome-text">
+        <h2>All your news in one place</h2>
+        <div id="welcome-buttons">
+          <a href="#" class="outlined-button">READ MORE</a>
+          <a href="#" class="blue-button">GET STARTED</a>
+        </div>
+      </div>
+      <div id="welcome-img">
+        <img src="assets/placeholder-computer.png" alt="Error displaying image">
+      </div>
+    </div>
+  </main>
+</body>
 </html>

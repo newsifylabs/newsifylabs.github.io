@@ -1,0 +1,81 @@
+* {
+  margin:0;
+  padding:0;
+}
+html {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#landing-body h1, h2 {
+  letter-spacing: -0.05em;
+}
+#landing-header {
+  padding-left: 92px;
+  padding-top: 32px;
+  font-family: 'Karla', sans-serif;
+}
+#landing-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#landing-ul li:nth-child(1) {
+  margin-right: auto;
+}
+#landing-ul li:nth-child(n+2) {
+  margin-right: 92px;
+}
+#landing-header h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+#welcome-grid {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: 4fr 3fr;
+}
+#welcome-text {
+  padding-top: 128px;
+  padding-left: 128px;
+}
+#welcome-text h2 {
+  font-family: 'Karla', sans-serif;
+  font-size: 64px;
+  max-width: 420px;
+}
+#welcome-buttons {
+  margin-top: 32px;
+}
+.outlined-button {
+  font-family: 'Karla', sans-serif;
+  padding: 8px;
+  color: #747474;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #747474;
+  margin-right: 24px;
+  transition: all 0.2s;
+}
+.outlined-button:hover {
+  background: rgba(116,116,116,0.33);
+}
+.blue-button {
+  font-family: 'Karla', sans-serif;
+  padding: 8px;
+  color: #fff;
+  border-radius: 4px;
+  background: #2962ff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+.blue-button:hover {
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.25);
+  background: #0039cb
+}
+#welcome-img {
+  padding-right: 128px;
+}
