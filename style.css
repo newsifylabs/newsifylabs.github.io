@@ -387,14 +387,28 @@ label[for=name-input] {
   margin-bottom: 56px;
   text-align: center;
 }
-.sidebar {
+#sidebar {
+  width: 300px;
   position: absolute;
   left: -300px;
   top: 0;
-  width: 300px;
-  height: 100%;
+  height: 100vh;
+  background-color: white;
   z-index: 125;
+  transition: all 0.2s;
 }
-.sidebar u {
+#sidebar ul {
   list-style: none;
+  margin-top: 192px;
+  margin-left: 56px;
+  font-family: 'Karla', sans-serif;
+}
+#sidebar li {
+  margin-top: 16px;
+  font-size-adjust: 18px;
+}
+#menubutton {
+  cursor: pointer;
+  z-index: 150;
+  user-select: none;
 }
