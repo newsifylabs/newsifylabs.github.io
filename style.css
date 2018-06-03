@@ -92,7 +92,7 @@ h1 {
 }
 .blue-button:hover {
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.25);
-  background: #0039cb
+  background: #0039cb;
 }
 
 #howto {
@@ -262,11 +262,10 @@ label[for=name-input] {
 #continue-button:hover {
   transition: all 0.25s;
 }
-.material-icons.md-36 {
+.material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 36px;  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -274,6 +273,12 @@ label[for=name-input] {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+}
+.material-icons.md-36 {
+  font-size: 36px;  /* Preferred icon size */
+}
+.material-icons.md-18 {
+  font-size: 18px;
 }
 #nav {
   display: flex;
@@ -314,7 +319,34 @@ label[for=name-input] {
 }
 #description {
   margin-top: 24px;
+  margin-bottom: 16px;
   font-family: 'PT Serif', serif;
+}
+.article-text a {
+  margin-top: 16px;
+  background: #2962ff;
+  padding: 2px 6px 6px 6px;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: normal;
+  box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.3);
+}
+.article-text a:hover {
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
+  background: #0039cb;
+  transition: all 0.2s;
+}
+.article-text span {
+  vertical-align: middle;
+}
+.article-text i {
+  color: white;
+  vertical-align: middle;
+  margin-right: 4px;
 }
 .article-img {
   position: relative;
@@ -336,4 +368,33 @@ label[for=name-input] {
   left: 0;
   z-index: 100;
   display: inline-block;
+}
+#next-article {
+  font-family: 'Karla', sans-serif;
+  padding: 8px;
+  color: #747474;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #747474;
+  transition: all 0.2s;
+}
+#next-article:hover {
+  background: rgba(116,116,116,0.33);
+}
+.next {
+  display: block;
+  margin-top: 92px;
+  margin-bottom: 56px;
+  text-align: center;
+}
+.sidebar {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  z-index: 125;
+}
+.sidebar u {
+  list-style: none;
 }
