@@ -348,17 +348,17 @@ label[for=name-input] {
   vertical-align: middle;
   margin-right: 4px;
 }
-.article-img {
+.article-img-cont {
   position: relative;
   height: 300px;
 }
-.article-img img {
+#article-img {
   filter: grayscale(100%);
   z-index: -100;
   height: 100%;
   width: auto;
 }
-.article-img span {
+.article-img-cont span {
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -395,7 +395,7 @@ label[for=name-input] {
   height: 100vh;
   background-color: white;
   z-index: 125;
-  transition: all 0.2s;
+  transition: all 0.5s;
 }
 #sidebar ul {
   list-style: none;
@@ -407,8 +407,13 @@ label[for=name-input] {
   margin-top: 16px;
   font-size-adjust: 18px;
 }
+#closebutton {
+  position: absolute;
+  cursor: pointer;
+  top: 56px;
+  left: 56px;
+}
 #menubutton {
   cursor: pointer;
-  z-index: 150;
   user-select: none;
 }
