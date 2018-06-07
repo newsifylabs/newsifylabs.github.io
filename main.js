@@ -1,5 +1,3 @@
-// Fetching api key
-var apikey = config.API_KEY;
 
 $( document ).ready(function() {
   var sidebar = document.getElementById("sidebar");
