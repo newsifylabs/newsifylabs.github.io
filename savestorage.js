@@ -17,11 +17,10 @@ $( document ).ready(function() {
   var general = document.getElementById("general");
   var namere = /^[A-Za-z]+$/;
 
-localStorage.clear();
-
   saveButton.onclick = function() {
     if(document.querySelectorAll('input[type="checkbox"]:checked').length > 0 && $nameInput.val().match(namere) && $nameInput.length > 0) {
       localStorage.setItem("hasVisited", true);
+      localStorage.setItem("name", $nameInput.val());
       if(business.checked == true){
         localStorage.setItem("business", business.checked);
       }
@@ -40,11 +39,11 @@ localStorage.clear();
       if(general.checked == true){
         localStorage.setItem("general", general.checked);
       }
-    saveButton.href = "article.html";
-  }
-  else {
-    console.log("great");
-  }
+      saveButton.href = "index.html";
+    }
+    else {
+      console.log("great");
+    }
   };
   // console.log(localStorage.getItem("testItem"));
   // localStorage.removeItem("testItem");

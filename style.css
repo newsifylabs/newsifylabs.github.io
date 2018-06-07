@@ -259,7 +259,7 @@ label[for=name-input] {
   margin-top: 88px;
 }
 #continue-button {
-  
+
   transition: none;
   border-radius: 100px;
   padding: 8px;
@@ -311,7 +311,7 @@ label[for=name-input] {
   margin-left: auto;
   margin-right: auto;
 }
-.article-text {
+#article-text {
   padding: 32px;
   margin-left: -40px;
   background-color: white;
@@ -327,7 +327,7 @@ label[for=name-input] {
   margin-bottom: 16px;
   font-family: 'PT Serif', serif;
 }
-.article-text a {
+#article-text a {
   margin-top: 16px;
   background: #2962ff;
   padding: 2px 6px 6px 6px;
@@ -340,22 +340,22 @@ label[for=name-input] {
   font-weight: normal;
   box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.3);
 }
-.article-text a:hover {
+#article-text a:hover {
   box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.4);
   background: #0039cb;
   transition: all 0.2s;
 }
-.article-text span {
+#article-text span {
   vertical-align: middle;
 }
-.article-text i {
+#article-text i {
   color: white;
   vertical-align: middle;
   margin-right: 4px;
 }
 .article-img-cont {
   position: relative;
-  height: 380px;
+  height: 400px;
 }
 #article-img {
   filter: grayscale(100%);
@@ -412,6 +412,10 @@ label[for=name-input] {
   margin-top: 16px;
   font-size-adjust: 18px;
 }
+#sidebar li:nth-child(3) {
+  margin-top: 72px;
+  cursor: pointer;
+}
 #closebutton {
   position: absolute;
   cursor: pointer;
@@ -434,6 +438,7 @@ label[for=name-input] {
   justify-content: center;
   text-align: center;
   align-items: center;
+  font-family: 'Karla', sans-serif;
 }
 #article-html {
   height: 100%;
@@ -498,4 +503,167 @@ label[for=name-input] {
 }
 #contact-body {
   padding-bottom: 128px;
+}
+@media screen and (max-width: 1600px) {
+
+  #about-grid {
+    margin-top: 56px;
+  }
+  #contact-grid {
+    margin-top: 56px;
+  }
+  .article-center {
+    margin-top: 56px;
+  }
+  #headline {
+    font-size: 32px;
+  }
+  .article-img-cont {
+    height: 300px;
+  }
+  #article-img {
+    height: 100%;
+    width: auto;
+  }
+  #contact-grid img {
+    width: 80%;
+    height: auto;
+  }
+  .footer {
+    height: 96px;
+  }
+  #about-body {
+    padding-bottom: 56px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+  #article-text {
+    margin-left: 0;
+  }
+  .article-img-cont {
+    height: 400px;
+  }
+  #about-text {
+    min-width: 100px;
+    width: 320px;
+  }
+  #article {
+    flex-direction: column;
+  }
+  #about-body, #contact-body {
+    padding-bottom: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 496px;
+  }
+  #about-grid {
+    flex-direction: column;
+  }
+  #about-text {
+    margin-left: 0px;
+    min-width: 100px;
+    width: 320px;
+  }
+  #about-img {
+    min-width: 100px;
+    width: 320px;
+    height: auto;
+  }
+  .footer {
+    display: block;
+    width: 100%;
+    height: 168px;
+    position: absolute;
+    bottom: 0;
+  }
+  .footer-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
+  #footer-info {
+    max-width: 500px;
+    margin-bottom: 16px;
+  }
+  .footer-container ul {
+    margin-top: 12px;
+    list-style: none;
+  }
+  .footer-container ul li {
+    text-align: center;
+  }
+  .footer-container > li:last-child {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  #nav li:nth-child(2) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #landing-ul li:last-child {
+    margin-right: 12px;
+  }
+  #landing-ul li:first-child {
+    margin-left: 12px;
+  }
+  #landing-ul li:nth-child(2) {
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 296px;
+    margin: 0 auto;
+  }
+  #about-grid {
+    flex-direction: column;
+  }
+  #footer-info {
+    max-width: 224px;
+    margin-bottom: 16px;
+  }
+  .footer {
+    height: 192px;
+  }
+  #contact-body, #about-body {
+    padding-bottom: 224px;
+  }
+  #about-text {
+    margin-left: 0px;
+    min-width: 100px;
+    width: 224px;
+  }
+  #about-img {
+    min-width: 100px;
+    width: 224px;
+    height: auto;
+  }
+  #article-text {
+    padding: 8px;
+  }
+  .article-img-cont {
+    height: 200px;
+  }
+  #headline {
+    font-size: 32px;
+  }
+  #article-img {
+    height: 100%;
+    width: auto;
+  }
+  .article-center {
+    margin-top: 16px;
+  }
+  .next {
+    margin-top: 48px;
+  }
+}
 }
