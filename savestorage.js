@@ -42,7 +42,7 @@ $( document ).ready(function() {
       saveButton.href = "index.html";
     }
     else {
-      console.log("great");
+      alert("Oops! Something went wrong, make sure that you filled in your name and at least one category.");
     }
   };
   // console.log(localStorage.getItem("testItem"));

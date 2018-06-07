@@ -386,11 +386,12 @@ label[for=name-input] {
 #next-article:hover {
   background: rgba(116,116,116,0.33);
 }
-.next {
+#next {
   display: block;
   margin-top: 92px;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
   text-align: center;
+  font-family: 'Karla', sans-serif !important;
 }
 #sidebar {
   width: 300px;
@@ -643,6 +644,15 @@ label[for=name-input] {
     width: 320px;
     height: auto;
   }
+  #categories-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+  #personalize h2 {
+    font-size: 32px;
+  }
+  .buttonend {
+    padding-bottom: 56px;
+  }
   .footer {
     display: block;
     width: 100%;
@@ -736,7 +746,7 @@ label[for=name-input] {
   .article-center {
     margin-top: 16px;
   }
-  .next {
+  #next {
     margin-top: 48px;
   }
 }

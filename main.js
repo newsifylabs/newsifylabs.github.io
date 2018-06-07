@@ -7,6 +7,7 @@ $( document ).ready(function() {
   var closeButton = document.getElementById("closebutton");
   var clearStorage = document.getElementById("clear-storage");
   var readMore = document.getElementById("read-more");
+  var next = document.getElementById("next");
   var nextButton = document.getElementById("next-article");
   var headline = document.getElementById("headline");
   var description = document.getElementById("description");
@@ -21,14 +22,12 @@ $( document ).ready(function() {
 
   whiteFill.innerHTML = "Just a second " + localStorage.getItem("name") + ", preparing your news.";
 
-
   var business;
   var sports;
   var tech;
   var politics;
   var culture;
   var general;
-
 
   var imgArray = [];
   var urlArray = [];
@@ -102,6 +101,7 @@ $( document ).ready(function() {
       }
       if(urlCount === urlArray.length-1 && x===2) {
         nextButton.style.display = "none";
+        next.innerHTML = "Nothing more to read, back to work!";
       }
       testFunction();
     };
@@ -150,7 +150,7 @@ clearStorage.onclick = function() {
       sidebar.style.color = "white";
       sidebarAbout.style.color = "white";
       sidebarContact.style.color = "white";
-      clearStorage.style.color = "white"
+      clearStorage.style.color = "white";
       sidebar.style.background = "#212121";
     }
     else {
@@ -160,6 +160,9 @@ clearStorage.onclick = function() {
       articleText.style.color = null;
       articleText.style.background = null;
       sidebar.style.color = null;
+      sidebarAbout.style.color = null;
+      sidebarContact.style.color = null;
+      clearStorage.style.color = null;
       sidebar.style.background = null;
     }
   };
