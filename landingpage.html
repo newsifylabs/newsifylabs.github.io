@@ -9,88 +9,98 @@
   <!-- Google fonts link -->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700|PT+Serif" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120569466-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120569466-1');
+</script>
+
 </head>
 <body id="landing-body">
-<div class="wrapper">
-  <!-- Header layout using flexbox-->
-  <header id="landing-header">
-    <div class="header-links">
-      <ul id="landing-ul">
-        <li><h1><a href="landingpage.html">newsify</a></h1></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-  <main id="landing-main">
-    <!-- Container med text & bild -->
-    <div id="welcome-grid">
-      <div id="welcome-text">
-        <h2>All your news in one place</h2>
-        <div id="welcome-buttons">
-          <a href="about.html" class="outlined-button">READ MORE</a>
-          <a href="signup.html" class="blue-button">GET STARTED</a>
-        </div>
-      </div>
-      <div id="welcome-img">
-        <img src="assets/placeholder-computer.png" alt="Error displaying image">
-      </div>
-    </div>
-
-    <!-- Sektion som visar hur det går till -->
-    <div id="howto">
-      <div id="howto-text">
-        <h3>How does it work?</h3>
-      </div>
-      <!-- Flexbox container -->
-      <div id="howto-media">
-        <div class="howto-steps">
-          <img src="assets/text.png" alt="Step 1">
-          <p>Choose your preferred news categories.</p>
-        </div>
-        <div class="howto-steps">
-          <img src="assets/save.png" alt="Step 2">
-          <p>Save your preferences for the future.</p>
-        </div>
-        <div class="howto-steps">
-          <img src="assets/check.png" alt="Step 3">
-          <p>You're done! Your news will be ready for you anytime.</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="trust">
-      <h3>Can I trust the sources?</h3>
-      <p>We provide news from some of the most trusted and unbiased news
-        sources out there, and here are some examples:</p>
-
-        <!-- Container med exempel på källor -->
-        <div id="sources">
-          <p>Wired</p>
-          <p>Politico</p>
-          <p>BBC</p>
-          <p>The Washington Post</p>
-          <p>Independent</p>
-          <p>Financial Times</p>
-          <p>The New York Times</p>
-        </div>
-      </div>
-    </main>
-</div>
-    <!-- Footer -->
-      <div class="footer">
-        <ul class="footer-container">
-          <li>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </li>
-          <li id="footer-info">POWERED BY NEWSAPI.ORG - THIS IS A NON-COMMERCIAL PROJECT</li>
-          <li>newsify</li>
+  <div class="wrapper">
+    <!-- Header layout using flexbox-->
+    <header id="landing-header">
+      <div class="header-links">
+        <ul id="landing-ul">
+          <li><h1><a href="landingpage.html">newsify</a></h1></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <script src="config.js"></script>
-      <script src="main.js"></script>
+    </header>
+    <main id="landing-main">
+      <!-- Container med text & bild -->
+      <div id="welcome-grid">
+        <div id="welcome-text">
+          <h2>All your news in one place</h2>
+          <div id="welcome-buttons">
+            <a href="about.html" class="outlined-button">READ MORE</a>
+            <a href="signup.html" class="blue-button">GET STARTED</a>
+          </div>
+        </div>
+        <div id="welcome-img">
+          <img src="assets/mockup.png" alt="Error displaying image">
+        </div>
+      </div>
+
+      <!-- Sektion som visar hur det går till -->
+      <div id="howto">
+        <div id="howto-text">
+          <h3>How does it work?</h3>
+        </div>
+        <!-- Flexbox container -->
+        <div id="howto-media">
+          <div class="howto-steps">
+            <img src="assets/text.png" alt="Step 1">
+            <p>Choose your preferred news categories.</p>
+          </div>
+          <div class="howto-steps">
+            <img src="assets/save.png" alt="Step 2">
+            <p>Save your preferences for the future.</p>
+          </div>
+          <div class="howto-steps">
+            <img src="assets/check.png" alt="Step 3">
+            <p>You're done! Your news will be ready for you anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="trust">
+        <h3>Can I trust the sources?</h3>
+        <p>We provide news from some of the most trusted and unbiased news
+          sources out there, and here are some examples:</p>
+
+          <!-- Container med exempel på källor -->
+          <div id="sources">
+            <p>Wired</p>
+            <p>Politico</p>
+            <p>BBC</p>
+            <p>The Washington Post</p>
+            <p>Independent</p>
+            <p>Financial Times</p>
+            <p>The New York Times</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <ul class="footer-container">
+        <li>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li id="footer-info">POWERED BY NEWSAPI.ORG - THIS IS A NON-COMMERCIAL PROJECT</li>
+        <li>newsify</li>
+      </ul>
+    </div>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
   </body>
   </html>

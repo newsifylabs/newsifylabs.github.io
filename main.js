@@ -152,6 +152,7 @@ clearStorage.onclick = function() {
       sidebarContact.style.color = "white";
       clearStorage.style.color = "white";
       sidebar.style.background = "#212121";
+      next.style.color = "white";
     }
     else {
       nightBoolean = false;
@@ -164,6 +165,7 @@ clearStorage.onclick = function() {
       sidebarContact.style.color = null;
       clearStorage.style.color = null;
       sidebar.style.background = null;
+      next.style.color = null;
     }
   };
 
